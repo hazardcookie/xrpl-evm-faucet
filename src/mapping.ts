@@ -1,6 +1,6 @@
-import { privateToPublic, privateToAddress } from 'ethereumjs-util'
-import { Mapped_Keys } from '../types'
+import { privateToAddress, privateToPublic } from 'ethereumjs-util'
 import { Wallet } from 'xrpl'
+import { Mapped_Keys } from './types'
 
 /// @notice Takes an xrpl secret and returns an object with both xrpl and ethereum key pairs
 /// @param {string} xrplSecretKey - xrpl secret key

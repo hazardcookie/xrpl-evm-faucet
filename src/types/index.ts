@@ -7,9 +7,8 @@ export type Mapped_Keys = {
 }
 
 export type Faucet = {
-    xAddress: string
-    secret: string
-    classicAddress: string
-    address: string
+  xAddress: string
+  secret: string
+  classicAddress: string
+  address: string
 }
-   

@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { Faucet } from '../types';
+import axios from 'axios'
+import { Faucet } from './types'
 
 // Function to submit request to AMM devnet faucet
 export async function create_wallet(): Promise<Faucet> {
@@ -14,5 +14,6 @@ export async function create_wallet(): Promise<Faucet> {
   }
 
   const response = await axios(requestConfig)
-  return response.data.account
+  const data = response.data.account as Faucet
+  return data
 }
