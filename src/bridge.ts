@@ -1,4 +1,4 @@
-import { sign_submit_await } from './transactions'
+import { sign_submit_await } from './submit'
 import { Wallet, xrpToDrops, Client, Payment } from 'xrpl'
 
 export async function bridge(client: Client, xrpl_wallet: Wallet, evm_wallet_address: string, amount: number) {
