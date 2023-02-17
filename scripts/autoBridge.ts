@@ -4,6 +4,7 @@ import { create_wallet } from '../src/wallet'
 import { Mapped_Keys, Faucet } from '../src/types'
 import { map_xrpl_secret_to_evm } from '../src/mapping'
 
+/// @author: hazardcookie
 async function main() {
   const client = new Client('wss://s.devnet.rippletest.net:51233')
   await client.connect()
