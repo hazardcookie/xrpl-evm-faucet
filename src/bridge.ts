@@ -16,8 +16,8 @@ export async function bridge(client: Client, xrpl_wallet: Wallet, evm_wallet_add
     ]
   }
 
-  const result = await sign_submit_await(client, transaction, xrpl_wallet)
-  if (result == 'tesSUCCESS') {
+  const result = Promise.resolve(sign_submit_await(client, transaction, xrpl_wallet))
+  if (await result == 'tesSUCCESS') {
     console.log(`View your mapped EVM sidechain wallet: https://evm-sidechain.xrpl.org/address/${evm_wallet_address}`)
   }
 

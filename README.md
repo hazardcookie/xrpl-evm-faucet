@@ -1,6 +1,6 @@
 ## Installation
 
-To install the dependencies, run the following command: 
+To install the dependencies, run the following command:
 `npm install` or `pnpm install` or `yarn install`
 
 ## Usage
