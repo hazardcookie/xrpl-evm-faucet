@@ -5,13 +5,10 @@
   "author": "hazardcookie",
   "license": "MIT",
   "scripts": {
-    "ts-node": "ts-node -P ./tsconfig.json",
-    "**_example_**_ts-node": "yarn ts-node ./src/autoBridge.ts",
-    "format": "npx prettier -w .",
+    "pretty": "npx prettier -w .",
     "test": "yarn c && jest -all",
-    "bridge": "ts-node scripts/autoBridge.ts",
     "c": "rm -rf ./dist && tsc",
-    "start": "yarn c && node ./dist/src/autoBridge.js"
+    "start": "yarn c && node ./dist/src/bridge.js"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",
@@ -25,6 +22,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "@thebettermint/xrpl-auto-funder": "^0.0.4",
     "axios": "^1.3.3",
     "ethereumjs-util": "^7.1.5",
     "xrpl": "^2.6.0"
