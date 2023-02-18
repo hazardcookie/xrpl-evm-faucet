@@ -25,6 +25,7 @@
     "@thebettermint/xrpl-auto-funder": "^0.0.4",
     "axios": "^1.3.3",
     "ethereumjs-util": "^7.1.5",
-    "xrpl": "^2.6.0"
+    "xrpl": "^2.6.0",
+    "xrpl-evm-mapping": "^1.0.0"
   }
 }
