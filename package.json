@@ -4,12 +4,16 @@
   "description": "Proof of concept for mapping EVM keys to XRPL accounts, and bridging to the mapped EVM wallet.",
   "author": "hazardcookie",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
+    "ts-node": "ts-node -P tsconfig.json",
     "format": "npx prettier -w .",
     "test": "yarn c && jest -all",
-    "bridge": "ts-node scripts/autoBridge.ts"
+    "bridge": "ts-node scripts/autoBridge.ts",
+	"c": "rm -rf ./dist && tsc && tsc-alias",
+	"start": "node ./dist/src/autoBridge.js"
   },
+
   "devDependencies": {
     "@types/jest": "^29.2.4",
     "@types/lodash": "^4.14.191",

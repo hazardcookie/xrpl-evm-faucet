@@ -1,8 +1,8 @@
-import { bridge } from '../src/bridge'
+import { bridge } from './bridge'
 import { Client, Wallet } from 'xrpl'
-import { create_wallet } from '../src/wallet'
-import { Mapped_Keys, Faucet } from '../src/types'
-import { map_xrpl_secret_to_evm } from '../src/mapping'
+import { create_wallet } from './wallet'
+import { Mapped_Keys, Faucet } from './types'
+import { map_xrpl_secret_to_evm } from './mapping'
 
 /// @author: hazardcookie
 async function main() {
