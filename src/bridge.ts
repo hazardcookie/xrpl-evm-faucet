@@ -11,7 +11,6 @@ export const wait = async (time: number) => {
   })
 }
 
-
 function saveWallet(wallet: Mapped_Keys) {
   const data = JSON.stringify(wallet, null, 2)
   if (!existsSync('./wallets')) {
