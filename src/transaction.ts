@@ -14,6 +14,8 @@ async function sign_submit_await(client: Client, transaction: Payment, wallet: W
   return meta
 }
 
+/// @notice devnet bridge: radjmEZTb4zsyNUJGV4gcVPXrFTJAuskKa
+//  @dev this address may change in the future as the devnet is updated
 export async function bridge(client: Client, xrpl_wallet: Wallet, evm_wallet_address: string, amount: number) {
   const transaction: Payment = {
     TransactionType: 'Payment',
